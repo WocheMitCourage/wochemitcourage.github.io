@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>WocheMitCourage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCR</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>WocheMitCourage</h1>
-<p>An der website wird gearbeitet</p>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#podcasts">Podcasts</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <input type="text" id="searchInput" placeholder="Nach artikeln, videos und podcasts suchen...">
+            <button id="searchButton">⌕</button>
+        </section>
+
+        <section id="latestArticles">
+            <h2>Artikelen</h2>
+            <div class="articleGrid">
+                <!-- Articles will be dynamically added here -->
+            </div>
+            <button class="seeAllButton" onclick="location.href='articles.html'">Alle Artikeln</button>
+        </section>
+
+        <section id="latestMedia">
+            <h2>Videos und Podcasts</h2>
+            <div class="mediaGrid">
+                <!-- Videos and podcasts will be dynamically added here -->
+            </div>
+            <button class="seeAllButton" onclick="location.href='media.html'">Alle Videos und Podcasts anschauen</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
